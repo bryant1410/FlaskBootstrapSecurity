@@ -77,7 +77,7 @@ Installation
 Usage
 -----
 
-##Commands
+## Commands
 _Run these commands by using `python manage.py <command>`_
 
 
@@ -90,20 +90,20 @@ _Run these commands by using `python manage.py <command>`_
 * `run_tests` - Runs unittests using nose.
 * Commands included with Flask-Security can be found here: http://packages.python.org/Flask-Security/#flask-script-commands and by looking in `flask_application/script.py`
 
-##Templates
+## Templates
 The base template used Flask-Bootstrap for basic templates. This project can be overridden by adding your own templates to the `templates` folder or by taking it out.
 
-##Structure
+## Structure
 The structure provides you with a way to scale your app comfortably. All sub-apps have their own directory (the skeleton apps `admin/`, `public/`, `users/` are provided) and all views inherit from one common view class. Class-based views give you the ability to subclass and inherit many features. If extra-functionality is needed for your views, you can quickly edit the baseclass and be done with it.
 
 The same carries over to your models. It is preferable to subclass `FlaskDocument` than to subclass mongoengines `Document` directly. Because `FlaskDocument` is under your control, you can override and add functions to enrich your all your models at once.
 
-##Running Tests
+## Running Tests
 You can run the unittests either with `ENVIRONMENT=TESTING ./manage.py run_tests`, with `ENVIRONMENT=TESTING . /bin/run_tests.sh` or `ENVIRONMENT=TESTING nosetests`.
 
 This repo is configured for Continuous Integration with Travis. Every commit runs the test suite. You can add Travis to your own projects by pointing it at your forked repository.
 
-##Static Content
+## Static Content
 This project is designed to use CSSMin and Flask-Assets to manage Assets to save on bandwidth and requests. 
 
 You can find this in the `style` block of the layout template. You can also simply edit `static/css/site.css` as that is included in the base setup.
@@ -118,7 +118,7 @@ Simply add the free tiers of those services, change your `config.py` `SERVER_NAM
 
 Credit
 ------
-####Required Python Projects:
+#### Required Python Projects:
 
 * unittest2
 * Flask
@@ -133,10 +133,10 @@ Credit
 * Flask-Testing
 * python-memcached
 
-####Non-Python Projects:
+#### Non-Python Projects:
 * Twitter Bootstrap
 
-####Contributing Projects:
+#### Contributing Projects:
 * Flask-Security Example App
 * https://github.com/mbr/flask-bootstrap
 
